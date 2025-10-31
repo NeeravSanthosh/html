@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+    </style>
+    <body>
+        <h1> argument objects </h1>
+        <div id = "res"></div>
+        <script>
+           function maximum(){
+             var i, max = 0
+             for (i = 0; i < arguments.length; i++){
+             if (arguments[i]>max)
+             {
+                max = arguments[i]
+             }
+            }
+            return max
+           }
+
+            document.getElementById("res").innerHTML = "the maximum element is "  + maximum [12,23,675634,56,67,77,90,78]
+        </script>
+    </body>
+</html>
