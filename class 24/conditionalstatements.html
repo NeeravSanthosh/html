@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body style = "background-color: aqua;">
+    <h1>conditional statement</h1>
+    <div id = "res"></div>
+    <script>
+        var dt = new Date()
+        var hh = dt.getHours()
+        var greeting
+        if (hh < 10)
+    {
+        greeting = "\nGood morning"
+    }
+    else if (hh < 20){
+        greeting= "\n Good day"
+    }
+    else{
+        greeting = "\n Good evening"
+    }
+    document.getElementById("res").innerHTMl = "the current hour is :" +(hh)+greeting
+    </script>
+    </body>
+</html>
