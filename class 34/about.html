@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body,html{
+                height: 100%;
+                background-color: yellow;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 0px ;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: black;
+            }
+            .topnav a {
+                text-decoration: none;
+           float: right;
+           color: blueviolet;
+           text-align: center;
+           padding: 17px 50px;
+           font-size: 18px;
+            }
+            .topnav a:hover{
+                color: red;
+                font-size: 21px;
+
+            }
+            .topnav a.active{
+                color: gold;
+            }
+            .bg-image {
+                /* full height */
+                height: 50%;
+
+                /* center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            /* image used */
+            .img1 { background-image: url("bahaha.jpg");}
+            .img2 { background-image: url("emoji.png");}
+            .img3 { background-image: url("images.jpg");}
+            .img4 { background-image: url("hehhe.jpg");}
+            .img5 { background-image: url("Flushed_Emoji_Icon_5e6ce936-4add-472b-96ba-9082998adcf7_large.webp");}
+        /* position text in the middle of the page/image */
+
+                    .bg-text {
+                background-color: rgba(0,0,0, 0.4);
+                color: white;
+                font-weight: bold;
+                border: 10px solid ;
+                border-radius: 20px;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 300px;
+                padding: 20px;
+                text-align: center;
+                font-size: 80px;
+                    }
+                    </style>
+    </head>
+    <body>
+        <div class = "topnav">
+                        <a href = "index.html" class = active>home</a>
+                        <a href = "about.html">about us</a>
+                        <a href = "contact.html">contact</a>
+                        <a href = "gallery.html">gallery</a>
+        </div>
+        <div class = "bg-image img1"></div>
+        <div class = "bg-image img2"></div>
+        <div class = "bg-image img3"></div>
+        <div class = "bg-image img4"></div>
+        <div class = "bg-image img5"></div>
+
+        <div class = "bg-text">text</div>
+    </body>
+</html>

@@ -27,15 +27,18 @@
             .topnav a.active{
                 color: gold;
             }
-            .footer{
-                left:0px;
-                bottom:0px;
-                text-align: center;
-                background-color: black;
-                color: blue;
-                width:100%;
-                position: absolute;
+            .small{
+              border: 1px solid white;
+              width: 50px;
+              height: 50px;
             }
+            .gallery{
+                position: fixed;
+                top: 40%;
+                left: 40%;
+                border: 10px solid black;
+            }
+
         </style>
     </head>
     <body>
@@ -45,9 +48,16 @@
                         <a href = "contact.html">contact</a>
                         <a href = "gallery.html">gallery</a>
         </div>
-        <div class = "footer">
-            @ all copyrights reserved to Neerav<br>
-            contact : +91 4372848899
+        <div class = "gallery">
+           <a href = "bahaha.jpg" target = "_blank">
+            <img class = "small" src = "bahaha.jpg" alt = "picture1" border = 3>
+           </a>
+             <a href = "emoji.png" target = "_blank">
+            <img class = "small" src = "emoji.png" alt = "picture2" border = 3>
+           </a>
+            <a href = "hehhe.jpg" target = "_blank">
+            <img class = "small" src = "hehhe.jpg" alt = "picture3" border = 3>
+           </a>
         </div>
     </body>
 </html>
