@@ -1,0 +1,28 @@
+body{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: aliceblue;
+}
+.section{
+    text-align: justify;
+    padding: 50px 80px;
+    background-color: yellow;
+    color: black;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+}
+#head{
+    font-family: 'Franklin Gothic Medium','Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color:black ;
+}
+p{
+    color: brown;
+    
+}
+#para1{
+    color: navy;
+}
