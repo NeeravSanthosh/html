@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: yellow;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 0px ;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: black;
+            }
+            .topnav a {
+                text-decoration: none;
+           float: right;
+           color: blueviolet;
+           text-align: center;
+           padding: 17px 50px;
+           font-size: 18px;
+            }
+            .topnav a:hover{
+                color: red;
+                font-size: 21px;
+
+            }
+            .topnav a.active{
+                color: gold;
+            }
+            .small{
+              border: 1px solid white;
+              width: 50px;
+              height: 50px;
+            }
+            .gallery{
+                position: fixed;
+                top: 40%;
+                left: 40%;
+                border: 10px solid black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class = "topnav">
+                        <a href = "index.html" class = active>home</a>
+                        <a href = "about.html">about us</a>
+                        <a href = "contact.html">contact</a>
+                        <a href = "gallery.html">gallery</a>
+        </div>
+        <div class = "gallery">
+           <a href = "bahaha.jpg" target = "_blank">
+            <img class = "small" src = "bahaha.jpg" alt = "picture1" border = 3>
+           </a>
+             <a href = "emoji.png" target = "_blank">
+            <img class = "small" src = "emoji.png" alt = "picture2" border = 3>
+           </a>
+            <a href = "hehhe.jpg" target = "_blank">
+            <img class = "small" src = "hehhe.jpg" alt = "picture3" border = 3>
+           </a>
+        </div>
+    </body>
+</html>

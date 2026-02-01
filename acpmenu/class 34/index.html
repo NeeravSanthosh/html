@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: yellow;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 0px ;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: black;
+            }
+            .topnav a {
+                text-decoration: none;
+           float: right;
+           color: blueviolet;
+           text-align: center;
+           padding: 17px 50px;
+           font-size: 18px;
+            }
+            .topnav a:hover{
+                color: red;
+                font-size: 21px;
+
+            }
+            .topnav a.active{
+                color: gold;
+            }
+            .footer{
+                left:0px;
+                bottom:0px;
+                text-align: center;
+                background-color: black;
+                color: blue;
+                width:100%;
+                position: absolute;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                text-transform: capitalize;
+                color: black;
+            }
+            .carousel-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .myslides{
+                display: none;
+                max-height: 100%;
+                max-width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "topnav">
+                        <a href = "index.html" class = active>home</a>
+                        <a href = "about.html">about us</a>
+                        <a href = "contact.html">contact</a>
+                        <a href = "gallery.html">gallery</a>
+        </div>
+        <div class = "footer">
+            @ all copyrights reserved to Neerav<br>
+            contact : +91 4372848899
+        </div>
+        <h1>emoji</h1>
+        <div class = "carousel-container">
+            <img class = "myslides" src = "Flushed_Emoji_Icon_5e6ce936-4add-472b-96ba-9082998adcf7_large.webp" alt =slide1>
+            <img class = "myslides" src = "images.jpg" alt=slides2>
+            <img class = "myslides" src = "emoji.png" alt=slides3>
+        </div>
+        <script>
+            var index = 0;
+            function carousel(){
+                var i;
+                var x = document.getElementsByClassName("myslides")
+                for(i=0;i<x.length;i++)
+                {
+                    x[i].style.display = "none"
+                }
+                index++;
+                if (index >x.length){
+                    index = 1
+                }
+                x[index-1].style.display = "block";
+                setTimeout(carousel,3000)
+            }
+            carousel()
+        </script>
+    </body>
+</html>
