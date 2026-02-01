@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+><html>
+    <head>
+        <title>area calculator</title>
+    </head>
+    <h1>area calculator</h1>
+    <script>
+        var area, l,b,h,r
+        var choice = prompt("1.Rectangle \n2.Triangle \n3.Parellelogram \n4.Circle \n5Enter your choice")
+        if (choice == "1")
+    {
+        l = prompt("enter the length")
+        b = prompt("enter the breadthe of the Rectangle")
+        area = Number(l) * Number(b)
+        alert("the area of the rectangle is"+area)
+    }
+    else if (choice == "2")
+    {
+        h = prompt("enter the height of the triangle")
+        b = prompt("enter the breadthe of the triangle")
+        area = Number(h) * Number(b) * (1/2)
+        alert("the area of the triangle is"+area)
+    }
+    else if (choice == "3")
+    {
+           h = prompt("enter the height of the parellelogram")
+        b = prompt("enter the breadthe of the parellelogram")
+        area = Number(h) * Number(b)
+        alert("the area of the parellelogram is"+area)
+    }
+    else if (choice == "4")
+    {
+           r = prompt("enter the height of the circle")
+        area = 3.14 * r * r
+        alert("the area of the circle is"+area)
+    }
+    </script>
+</html>
